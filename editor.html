@@ -1,7 +1,7 @@
 <div>
     <div ng-repeat="note in notes">
         <span>
-            <i class="icon-chevron-right"></i>
+            <i class="icon-chevron-right bullet"></i>
         </span>
         <span focused="{{note.focus}}" contenteditable="true" class="no-outline" data-placeholder="Add entry..." ng-model="note.text" on-edit-end="add()" on-delete="remove($index)">
         </span>

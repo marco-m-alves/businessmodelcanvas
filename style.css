@@ -9,6 +9,16 @@ body { background-color: white; padding: 0; margin: 8px; }
   padding: 5px;
   }
 
+.view > h6 {
+	color: grey;
+}
+
+.bullet {
+	font-size: 0.7em;
+	color: gray;
+}
+
+
 /* ... but remain the "jasmine.css" styling for the Jasmine reporting */
 .jasmine_reporter { background-color: #eeeeee; padding: 0; margin: 0; }
 

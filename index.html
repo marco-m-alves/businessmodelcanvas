@@ -30,11 +30,8 @@
     <div class="container" ng-controller="MainCtrl">
       <h4>Business name</h4>
       <div>
-        <business-model-canvas>
-          <value-proposition>
-            <editor notes="bmc['value-proposition']"></editor>
-          </value-proposition>
-        </business-model-canvas>
+        <business-model-canvas-editor model="bmc">
+        </business-model-canvas-editor>
       </div>
       <!-- <div id="HTMLReporter" class="jasmine_reporter"></div> -->
     </div>

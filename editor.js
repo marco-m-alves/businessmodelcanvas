@@ -19,7 +19,7 @@ directive('editor', [function(){
     			} else {
     				scope.notes[index].focus = true
     			}
-    			console.log('after remove', notes);
+    			console.log('after remove', scope.notes);
     		};
 		}
 	};

@@ -7,9 +7,8 @@ directive('businessModelCanvas', function($http, BMCDOM, $compile){
   // Grabs the original html
   function compile(elm, attrs){
     raw = $(elm.parent().html());
-    return link
+    return link;
   }
-  
   
   function link(scope, elm, attrs){ 
     var userData = BMCDOM.scrape(raw);
@@ -25,6 +24,13 @@ directive('businessModelCanvas', function($http, BMCDOM, $compile){
   return {
     restrict: 'E',
     compile: compile
+  };
+}).
+directive('businessModelCanvasEditor', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'businessmodelcanvas-editor.html',
+    scope: { model: '=' }
   };
 }).
 service('BMCDOM', function(){
